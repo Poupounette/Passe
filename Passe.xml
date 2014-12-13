@@ -24,9 +24,6 @@
             </value>
           </block>
         </value>
-        <statement name="DO0">
-          <block type="movement_right" id="550"></block>
-        </statement>
         <value name="IF1">
           <block type="logic_compare" id="588" inline="true">
             <field name="OP">LT</field>
@@ -72,7 +69,29 @@
               </block>
             </value>
             <next>
-              <block type="movement_stop" id="393"></block>
+              <block type="controls_if" id="618" inline="false">
+                <value name="IF0">
+                  <block type="logic_compare" id="620" inline="true">
+                    <field name="OP">LT</field>
+                    <value name="A">
+                      <block type="sensor_object" id="621">
+                        <field name="OBJECT">LEFTFRONT</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="622">
+                        <field name="NUM">60</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="movement_right" id="550"></block>
+                </statement>
+                <next>
+                  <block type="movement_stop" id="393"></block>
+                </next>
+              </block>
             </next>
           </block>
         </next>
