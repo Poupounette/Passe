@@ -72,7 +72,51 @@
               </block>
             </value>
             <next>
-              <block type="movement_stop" id="393"></block>
+              <block type="controls_if" id="646" inline="false">
+                <mutation elseif="1" else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="647" inline="true">
+                    <field name="OP">LT</field>
+                    <value name="A">
+                      <block type="sensor_object" id="648">
+                        <field name="OBJECT">LEFTFRONT</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="649">
+                        <field name="NUM">60</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="movement_right" id="650"></block>
+                </statement>
+                <value name="IF1">
+                  <block type="logic_compare" id="651" inline="true">
+                    <field name="OP">LT</field>
+                    <value name="A">
+                      <block type="sensor_object" id="652">
+                        <field name="OBJECT">RIGHTFRONT</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="653">
+                        <field name="NUM">60</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO1">
+                  <block type="movement_left" id="654"></block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="movement_forward" id="655"></block>
+                </statement>
+                <next>
+                  <block type="movement_stop" id="393"></block>
+                </next>
+              </block>
             </next>
           </block>
         </next>
