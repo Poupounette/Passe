@@ -19,6 +19,9 @@
                         <field name="VAR">2000</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="movement_stop" id="373"></block>
+                    </next>
                   </block>
                 </next>
               </block>
@@ -32,6 +35,9 @@
                         <field name="VAR">4000</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="movement_stop" id="383"></block>
+                    </next>
                   </block>
                 </next>
               </block>
@@ -48,7 +54,11 @@
                     <next>
                       <block type="movement_forward" id="343">
                         <next>
-                          <block type="movement_right" id="363"></block>
+                          <block type="movement_right" id="363">
+                            <next>
+                              <block type="movement_stop" id="393"></block>
+                            </next>
+                          </block>
                         </next>
                       </block>
                     </next>
