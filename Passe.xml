@@ -1,63 +1,54 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="movement_left" id="121" x="-172" y="83">
     <next>
-      <block type="robot_delay" id="241" inline="true">
-        <value name="DELAY">
-          <block type="variables_get" id="244">
-            <field name="VAR">2000</field>
-          </block>
-        </value>
+      <block type="movement_stop" id="254">
         <next>
-          <block type="movement_stop" id="254">
-            <next>
-              <block type="controls_if" id="271" inline="false">
-                <mutation else="1"></mutation>
-                <value name="IF0">
-                  <block type="sensor_object" id="239">
-                    <field name="OBJECT">RIGHTFRONT</field>
-                  </block>
-                </value>
-                <statement name="DO0">
-                  <block type="movement_left" id="286">
-                    <next>
-                      <block type="robot_delay" id="288" inline="true">
-                        <value name="DELAY">
-                          <block type="variables_get" id="293">
-                            <field name="VAR">2000</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </statement>
-                <statement name="ELSE">
-                  <block type="movement_forward" id="303">
-                    <next>
-                      <block type="robot_delay" id="305" inline="true">
-                        <value name="DELAY">
-                          <block type="variables_get" id="312">
-                            <field name="VAR">4000</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </statement>
+          <block type="controls_if" id="271" inline="false">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="sensor_object" id="239">
+                <field name="OBJECT">RIGHTFRONT</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="movement_left" id="286">
                 <next>
-                  <block type="movement_left" id="322">
+                  <block type="robot_delay" id="288" inline="true">
+                    <value name="DELAY">
+                      <block type="variables_get" id="293">
+                        <field name="VAR">2000</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block type="movement_forward" id="303">
+                <next>
+                  <block type="robot_delay" id="305" inline="true">
+                    <value name="DELAY">
+                      <block type="variables_get" id="312">
+                        <field name="VAR">4000</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="movement_left" id="322">
+                <next>
+                  <block type="robot_delay" id="324" inline="true">
+                    <value name="DELAY">
+                      <block type="variables_get" id="333">
+                        <field name="VAR">3000</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="robot_delay" id="324" inline="true">
-                        <value name="DELAY">
-                          <block type="variables_get" id="333">
-                            <field name="VAR">3000</field>
-                          </block>
-                        </value>
+                      <block type="movement_forward" id="343">
                         <next>
-                          <block type="movement_forward" id="343">
-                            <next>
-                              <block type="movement_right" id="363"></block>
-                            </next>
-                          </block>
+                          <block type="movement_right" id="363"></block>
                         </next>
                       </block>
                     </next>
