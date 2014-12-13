@@ -4,7 +4,7 @@
       <block type="robot_delay" id="241" inline="true">
         <value name="DELAY">
           <block type="variables_get" id="244">
-            <field name="VAR">3000</field>
+            <field name="VAR">2000</field>
           </block>
         </value>
         <next>
