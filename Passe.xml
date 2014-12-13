@@ -24,6 +24,9 @@
             </value>
           </block>
         </value>
+        <statement name="DO0">
+          <block type="movement_right" id="600"></block>
+        </statement>
         <value name="IF1">
           <block type="logic_compare" id="588" inline="true">
             <field name="OP">LT</field>
@@ -60,7 +63,7 @@
       </block>
     </statement>
     <next>
-      <block type="movement_right" id="600">
+      <block type="movement_right" id="636">
         <next>
           <block type="robot_delay" id="602" inline="true">
             <value name="DELAY">
