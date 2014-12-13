@@ -15,8 +15,8 @@
                 <next>
                   <block type="robot_delay" id="288" inline="true">
                     <value name="DELAY">
-                      <block type="variables_get" id="293">
-                        <field name="VAR">2000</field>
+                      <block type="math_number" id="402">
+                        <field name="NUM">2000</field>
                       </block>
                     </value>
                     <next>
@@ -31,8 +31,8 @@
                 <next>
                   <block type="robot_delay" id="305" inline="true">
                     <value name="DELAY">
-                      <block type="variables_get" id="312">
-                        <field name="VAR">4000</field>
+                      <block type="math_number" id="400">
+                        <field name="NUM">4000</field>
                       </block>
                     </value>
                     <next>
@@ -47,8 +47,8 @@
                 <next>
                   <block type="robot_delay" id="324" inline="true">
                     <value name="DELAY">
-                      <block type="variables_get" id="333">
-                        <field name="VAR">3000</field>
+                      <block type="math_number" id="401">
+                        <field name="NUM">3000</field>
                       </block>
                     </value>
                     <next>
